@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    }
+
+body {
+    background-image: url("../images/fastfood.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+
+      }
+
+h1 {
+    font-size: 30px;
+}    
+
+#container {
+    text-align: center;
+    border: 2px solid red;
+    background: rgb(233, 136, 10);
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0px;
+}
+
+#timer {
+    text-align: center;
+    font-size: 26px;
+    margin: 30px auto;
+    max-width: 400px;
+    padding: 20px;
+}
+
+
+#quiz {
+    text-align: center;
+    border: 2px solid black;
+    background: lightyellow;
+    margin: 30px auto 10px;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.question {
+    text-align: center;
+    font-size: 16px;
+    padding: 4px;
+    margin: 5px;
+}
+
+.answers {
+    padding: 10px 0 40px 0;
+}
+
+#button-box {
+    text-align: center;
+   
+    margin: 5px auto;
+    max-width: 400px;
+    padding: 20px;
+}
+
+#submit {
+    background: yellow;
+    color: black;
+    text-align: center;
+    border: 2px solid red;
+    max-width: 200px;
+    padding: 10px;
+}
+
+#results {
+    text-align: center;
+    border: 2px solid black;
+    background: lightyellow;
+    margin: 30px auto;
+    max-width: 400px;
+    padding: 20px;
+}
