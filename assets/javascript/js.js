@@ -79,7 +79,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
     var counter = setInterval(timer, 1000);
 
     function timer() {
-        count=count-1;
+        count = count-1;
         $("#timer").text(count + " Seconds Remaining!");
         if (count <= 0) {
             showResults(questions, quizContainer, resultsContainer)
@@ -99,9 +99,8 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
                 answers.push(
                     '<label>'
                         + '<input type="radio" name="question'+i+'" value="'+letter+'">'
-                     //   + letter + ':'
                         + questions[i].answers[letter]
-                    +'</label>'
+                        +'</label>'
                 );
             }
 
@@ -116,10 +115,6 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
 
 
     function showResults(questions, quizContainer, resultsContainer) {
-
-
-        
-
 
         var answerContainers = quizContainer.querySelectorAll('.answers');
 
@@ -137,13 +132,11 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
         }
 
             resultsContainer.innerHTML = numCorrect + ' out of ' +questions.length;
-       
+      
 
     }
 
     showQuestions(questions, quizContainer);
-
-
 
     submitButton.onclick = function() {
         showResults(questions, quizContainer, resultsContainer);
